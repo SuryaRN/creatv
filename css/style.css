@@ -381,12 +381,14 @@
 
 .single-creatv-product:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .single-creatv-product .product-image {
     height: 200px; /* Atur tinggi tetap untuk gambar */
     overflow: hidden; /* Mengatasi overflow jika gambar melebihi tinggi tetap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .single-creatv-product img {
@@ -524,32 +526,42 @@
         transform: translateY(-5px); /* Mendorong sedikit ke atas saat ditekan */
     }
 
-    .product-image img:active {
+    .single-cool-product:active .product-image img {
         transform: scale(1.1); /* Memperbesar gambar saat ditekan */
     }
 }
 
 .product-details {
     text-align: center;
+    margin-top: 20px;
 }
 
-.btn {
+.product-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.product-details a {
     display: inline-block;
-    background-color: #007bff;
+    padding: 8px 16px;
+    background-color: var(--primary);
     color: #fff;
-    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.product-details a:hover {
+    background-color: var(--secondary);
 }
+
 /* Medali End */
-
-
-
 
 /* style.css */
 
@@ -584,9 +596,6 @@
 .animate__animated {
     animation-duration: 1s;
 }
-
-
-
 
 /*** Team ***/
 .team-item img {
