@@ -469,7 +469,98 @@
 
 /* Creatv Store End */
 
+/* Medali Start */
+.cool-store-section {
+    padding: 50px 0;
+}
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.single-cool-product {
+    position: relative;
+    width: 300px; /* Atur lebar tetap */
+    height: 300px; /* Atur tinggi tetap */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex; /* Menjadikan kotak produk sebagai flex container */
+    flex-direction: column; /* Menjadikan konten menjadi kolom */
+    justify-content: center; /* Mengatur konten secara vertikal di tengah */
+    align-items: center; /* Mengatur konten secara horizontal di tengah */
+    transition: transform 0.5s ease; /* Animasi ketika hovering */
+}
+
+/* Animasi untuk desktop */
+@media (min-width: 768px) {
+    .single-cool-product:hover {
+        transform: translateY(-5px); /* Mendorong sedikit ke atas saat hovering */
+    }
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Gambar akan menyesuaikan ukurannya tanpa dipotong */
+    transition: transform 0.5s ease; /* Animasi ketika hovering */
+}
+
+/* Animasi untuk perangkat seluler */
+@media (max-width: 767px) {
+    .single-cool-product:active {
+        transform: translateY(-5px); /* Mendorong sedikit ke atas saat ditekan */
+    }
+
+    .single-cool-product:active .product-image img {
+        transform: scale(1.1); /* Memperbesar gambar saat ditekan */
+    }
+}
+
+.product-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.product-details a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-details a:hover {
+    background-color: var(--secondary);
+}
+
+/* Medali End */
 
 /* Testimonial Section Product */
 /* Animasi testimoni */
