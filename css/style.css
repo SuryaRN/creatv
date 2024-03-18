@@ -487,6 +487,10 @@
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex; /* Menjadikan kotak produk sebagai flex container */
+    flex-direction: column; /* Menjadikan konten menjadi kolom */
+    justify-content: center; /* Mengatur konten secara vertikal di tengah */
+    align-items: center; /* Mengatur konten secara horizontal di tengah */
 }
 
 .product-image {
@@ -520,8 +524,8 @@
 .btn:hover {
     background-color: #0056b3;
 }
-
 /* Medali End */
+
 
 
 /* style.css */
