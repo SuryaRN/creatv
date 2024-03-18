@@ -471,14 +471,15 @@
 
 /* Medali Start */
 .cool-store-section {
-    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    justify-content: center; /* Mengatur produk ke tengah secara horizontal */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 }
 
 .single-cool-product {
