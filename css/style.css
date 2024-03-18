@@ -476,6 +476,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    justify-content: center; /* Mengatur produk ke tengah secara horizontal */
 }
 
 .single-cool-product {
@@ -513,7 +514,7 @@
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Gambar akan di-stretch untuk mengisi seluruh area */
+    object-fit: contain; /* Gambar akan menyesuaikan ukurannya tanpa dipotong */
     transition: transform 0.5s ease; /* Animasi ketika hovering */
 }
 
