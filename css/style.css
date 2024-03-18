@@ -467,6 +467,62 @@
 
 /* Creatv Store End */
 
+/* Medali Start */
+.cool-store-section {
+    padding: 50px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.single-cool-product {
+    position: relative;
+    width: 300px; /* Atur lebar tetap */
+    height: 300px; /* Atur tinggi tetap */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Gambar akan menyesuaikan ukurannya tetapi tetap mempertahankan aspek rasio */
+}
+
+.product-details {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Medali End */
+
 
 /* style.css */
 
