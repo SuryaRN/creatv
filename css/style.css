@@ -590,7 +590,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 10px;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out; /* Tambahkan animasi fadeIn */
     display: flex; /* Membuat isi testimoni berjajar secara vertikal */
     flex-direction: column; /* Menjadikan isi testimoni berjajar vertikal */
 }
@@ -621,7 +621,8 @@
     margin-bottom: 0; /* Ubah margin-bottom menjadi 0 untuk menyesuaikan jarak teks dengan gambar */
 }
 
- /* Testimonial End Product */
+/* Testimonial End Product */
+
 
 
 /* style.css */
