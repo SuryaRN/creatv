@@ -575,7 +575,7 @@
     }
 }
 
-/* Testimoni */
+/* Testimonial */
 .testimonial-container {
     display: flex;
     justify-content: center;
@@ -584,24 +584,32 @@
 }
 
 .testimonial-item {
-    max-width: 400px;
+    width: 400px; /* Tetapkan lebar tetap untuk kotak testimoni */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 10px;
     animation: fadeIn 1s ease-in-out;
+    display: flex; /* Membuat isi testimoni berjajar secara vertikal */
+    flex-direction: column; /* Menjadikan isi testimoni berjajar vertikal */
+}
+
+.testimonial-image {
+    flex: 1; /* Membuat gambar mengisi sebagian besar ruang dalam kotak testimoni */
+    margin-bottom: 15px;
 }
 
 .testimonial-image img {
     width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 100%;
+    border-radius: 10px; /* Memastikan gambar tidak menjadi bulat */
+    object-fit: cover; /* Mengatur agar gambar sesuai dengan ukuran kotak */
 }
 
+.testimonial-text {
+    flex: 1; /* Membuat teks mengisi sebagian dari ruang dalam kotak testimoni */
+}
 
 .testimonial-item h3 {
     font-size: 18px;
@@ -610,10 +618,11 @@
 
 .testimonial-item p {
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 0; /* Ubah margin-bottom menjadi 0 untuk menyesuaikan jarak teks dengan gambar */
 }
 
  /* Testimonial End Product */
+
 
 /* style.css */
 
