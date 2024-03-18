@@ -603,7 +603,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 10px;
-    animation: fadeIn 1s ease-in-out; /* Tambahkan animasi fadeIn */
+    animation: fadeIn 1s ease-in-out;
     display: flex; /* Membuat isi testimoni berjajar secara vertikal */
     flex-direction: column; /* Menjadikan isi testimoni berjajar vertikal */
 }
@@ -635,6 +635,7 @@
 }
 
 /* Testimonial End Product */
+
 
 
 
