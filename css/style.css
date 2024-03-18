@@ -357,6 +357,7 @@
 }
 
 /* creatv-store Start */
+/* creatv-store */
 
 .container {
     max-width: 1200px;
@@ -392,6 +393,7 @@
     width: 100%; /* Pastikan gambar mengisi kontainer */
     height: 100%; /* Pastikan gambar mengisi kontainer */
     object-fit: cover; /* Atur objek-fit untuk mengisi kontainer */
+    border-radius: 10px; /* Memastikan radius sudut seragam */
 }
 
 .product-details h3 {
@@ -462,6 +464,7 @@
         font-size: 20px;
     }
 }
+
 /* Creatv Store End */
 
 
