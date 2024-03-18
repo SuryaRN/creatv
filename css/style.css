@@ -719,6 +719,18 @@
 }
 
 
+/*** Testimonial ***/
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
 /*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
