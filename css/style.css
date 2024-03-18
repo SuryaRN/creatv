@@ -483,6 +483,19 @@
     }
 }
 
+/* Testimonial Section Product */
+/* Animasi testimoni */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Testimonial */
 .testimonial-container {
     display: flex;
@@ -507,7 +520,6 @@
 .testimonial-image {
     flex: 1; /* Membuat gambar mengisi sebagian besar ruang dalam kotak testimoni */
     margin-bottom: 15px;
-    aspect-ratio: 1 / 1; /* Set rasio aspek kotak gambar menjadi 1:1 */
 }
 
 .testimonial-image img {
