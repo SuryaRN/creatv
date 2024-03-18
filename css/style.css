@@ -356,7 +356,7 @@
     background: #0056b3;
 }
 
-/* creatv-store */
+/* creatv-store Start */
 
 .container {
     max-width: 1200px;
@@ -374,19 +374,24 @@
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Updated shadow to be more responsive */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smoother animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .single-creatv-product:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.single-creatv-product .product-image {
+    height: 200px; /* Atur tinggi tetap untuk gambar */
+    overflow: hidden; /* Mengatasi overflow jika gambar melebihi tinggi tetap */
 }
 
 .single-creatv-product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    width: 100%; /* Pastikan gambar mengisi kontainer */
+    height: 100%; /* Pastikan gambar mengisi kontainer */
+    object-fit: cover; /* Atur objek-fit untuk mengisi kontainer */
 }
 
 .product-details h3 {
@@ -457,6 +462,7 @@
         font-size: 20px;
     }
 }
+/* Creatv Store End */
 
 
 /* style.css */
