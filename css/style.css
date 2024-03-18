@@ -597,7 +597,7 @@
 }
 
 .testimonial-item {
-    width: 400px; /* Tetapkan lebar tetap untuk kotak testimoni */
+    max-width: 400px; /* Tetapkan lebar tetap untuk kotak testimoni */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -606,6 +606,7 @@
     animation: fadeIn 1s ease-in-out;
     display: flex; /* Membuat isi testimoni berjajar secara vertikal */
     flex-direction: column; /* Menjadikan isi testimoni berjajar vertikal */
+    text-align: center; /* Tengahkan teks dalam kotak testimoni */
 }
 
 .testimonial-image {
