@@ -564,78 +564,53 @@
 /* Medali End */
 
 /* Testimonial Section Product */
-.testimonial-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
+/* Animasi testimoni */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.testimonial-carousel .owl-nav {
-    position: absolute;
-    width: 350px;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+/* Testimoni */
+.testimonial-container {
     display: flex;
-    justify-content: space-between;
-    opacity: 0;
-    transition: .5s;
-    z-index: 1;
-}
-
-.testimonial-carousel:hover .owl-nav {
-    width: 300px;
-    opacity: 1;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    font-size: 30px;
-    color: var(--primary);
-}
-
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    color: var(--dark);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .testimonial-item {
-    background-color: #fff;
-    padding: 30px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.testimonial-item:hover {
-    transform: translateY(-5px);
-}
-
-.testimonial-image {
-    margin-bottom: 20px;
-}
-
-.testimonial-image img {
-    max-width: 100%;
-    height: auto;
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
-.testimonial-text p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.testimonial-text h3 {
+.testimonial-item h3 {
     font-size: 18px;
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
+
+.testimonial-item p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
  /* Testimonial End Product */
 
 /* style.css */
